@@ -40,4 +40,16 @@ Idiomas disponíveis: inglês, português brasileiro, russo, chinês simplificad
 
 Adaptado de **VR Reins**, de **SollyStones**. Distribuído sob a licença [GPL-3.0-or-later](LICENSE).
 
-Informações técnicas e dependências: [README-BIBLIOTECAS.md](README-BIBLIOTECAS.md).
+## Compilação
+
+Requer Windows x64, Visual Studio 2022 com ferramentas C++ e Windows SDK, Git e xmake 3.0 ou superior.
+
+Na pasta do projeto:
+
+```powershell
+git submodule update --init --recursive
+xmake f -p windows -a x64 -m releasedbg -y
+xmake -y
+```
+
+A DLL é gerada em `build/windows/x64/releasedbg/HorseReins.dll`. As dependências adicionais são obtidas pelo xmake. Os arquivos de instalação e os pacotes distribuídos são mantidos separadamente deste repositório de código-fonte.

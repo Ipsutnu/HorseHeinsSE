@@ -1,0 +1,11 @@
+/build/
+/.xmake/
+/package/
+/package-HorseReins/
+/*.zip
+/dist/
+/tests/
+/build.ps1
+/commonlib-version.txt
+/README-BIBLIOTECAS.md
+/THIRD-PARTY-NOTICES.md
